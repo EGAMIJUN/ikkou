@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0a0709;
+  --bone: #e8e6f0;
+  --blood: #7a1014;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--ink);
+  color: var(--bone);
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: "Shippori Mincho", "Noto Serif JP", serif;
+}
+
+/* Phaser injects a <canvas>; keep it pixel-crisp */
+canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  display: block;
+}

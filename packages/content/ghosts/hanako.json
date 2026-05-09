@@ -1,0 +1,15 @@
+{
+  "id": "hanako",
+  "name": "hanako",
+  "displayName": "花子さん",
+  "patrolSpeed": 60,
+  "chaseSpeed": 110,
+  "visionRange": 6,
+  "visionAngleDeg": 80,
+  "color": "#e8e6f0",
+  "catchphrase": "……みぃつけた。",
+  "patrol": [
+    { "x": 3, "y": 12 },
+    { "x": 36, "y": 12 }
+  ]
+}

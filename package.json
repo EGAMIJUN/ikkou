@@ -1,0 +1,20 @@
+{
+  "name": "ikkou",
+  "version": "0.1.0",
+  "private": true,
+  "description": "忌校 -IKKOU- : a 2D top-down horror game set in a Japanese school.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@ikkou/game",
+    "build": "npm run build --workspace=@ikkou/game",
+    "start": "npm run start --workspace=@ikkou/game",
+    "lint": "npm run lint --workspace=@ikkou/game"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "license": "MIT"
+}
