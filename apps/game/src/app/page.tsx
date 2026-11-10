@@ -1,14 +1,4 @@
-import dynamic from "next/dynamic";
-
-// Phaser touches `window` at import time, so the canvas must be client-only.
-const GameCanvas = dynamic(() => import("@/components/GameCanvas"), {
-  ssr: false,
-  loading: () => (
-    <div className="flex h-screen w-screen items-center justify-center text-bone/60">
-      読み込み中…
-    </div>
-  ),
-});
+import GameCanvas from "@/components/GameCanvasClient";
 
 export default function HomePage() {
   return (
